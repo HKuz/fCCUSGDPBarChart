@@ -1,0 +1,62 @@
+// Google fonts
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+// Variables
+$headerFonts: 'Helvetica Neue';
+$textFonts: 'Cabin Condensed', 'Helvetica Neue', sans-serif;
+$backgroundImg: '../Images/dollar-bills.jpeg';
+$dollarGreen: #35794B;
+$white: #ffffff;
+$darkGray: #93a1a1;
+
+// Mixins
+@mixin borderRad($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// CSS
+body {
+  font-family: $textFonts;
+  background-image: url($backgroundImg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url($backgroundImg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.chartBlock {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 750px;
+  background-color: $white;
+  border: 2px solid $darkGray;
+  box-shadow: 2px 3px 3px $darkGray;
+  @include borderRad(10px);
+
+  .header {
+    font-family: $headerFonts;
+    margin-bottom: -60px;
+  }
+}
+
+.bar {
+  fill: $dollarGreen;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: $white;
+  opacity: 0;
+  @include borderRad(5px);
+}
+
+.footer {
+  font-size: 12px;
+  margin: 10px 10px 15px;
+}

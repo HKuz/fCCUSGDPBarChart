@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+body {
+  font-family: "Cabin Condensed", "Helvetica Neue", sans-serif;
+  background-image: url("../Images/dollar-bills.jpeg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../Images/dollar-bills.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+.chartBlock {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 750px;
+  background-color: #ffffff;
+  border: 2px solid #93a1a1;
+  box-shadow: 2px 3px 3px #93a1a1;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+  .chartBlock .header {
+    font-family: "Helvetica Neue";
+    margin-bottom: -60px; }
+
+.bar {
+  fill: #35794B; }
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: #ffffff;
+  opacity: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+.footer {
+  font-size: 12px;
+  margin: 10px 10px 15px; }
+
+/*# sourceMappingURL=output.css.map */
